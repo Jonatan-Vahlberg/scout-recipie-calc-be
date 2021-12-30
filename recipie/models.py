@@ -16,7 +16,7 @@ class Ingredient(models.Model):
     recipie = models.ForeignKey(Recipie, on_delete=models.CASCADE, related_name='ingredients')
 
     name = models.CharField(max_length=255)
-    base_amount = models.FloatField()
+    base_amount = models.FloatField(null=True, blank=True)
     unit = models.CharField(max_length=3,
         choices=IngredientUnit.units,
         null=True, blank=True

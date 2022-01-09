@@ -135,7 +135,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 # Comment for commit message
-django_heroku.settings(locals(), staticfiles=False, allowed_hosts=False)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -143,3 +142,5 @@ if "DYNO" in os.environ:
     STATIC_ROOT = 'static'
     ALLOWED_HOSTS = ['example.herokuapp.com']
     DEBUG = False
+
+django_heroku.settings(locals())

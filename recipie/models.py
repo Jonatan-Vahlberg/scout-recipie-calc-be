@@ -4,7 +4,7 @@ from .enums import IngredientUnit, IngredientCategory
 
 class Recipie(models.Model):
     name = models.CharField(max_length=255)
-    descrtiption = models.TextField(null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
     link = models.CharField(max_length=500, null=True, blank=True)
     image_link = models.CharField(max_length=500, null=True, blank=True)
 

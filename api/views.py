@@ -12,21 +12,14 @@ class RecipieListView(generics.ListCreateAPIView):
     def create(self, request, *args, **kwargs):
         ingredients = request.data.get('ingredients')
         response = super().create(request, *args, **kwargs)
-        print(ingredients)
         response_id = response.data.get('id')
-        if(response_id is not None):
-
-            def add_recipe(ingredient):
-                ingredient['recipie'] = Recipie.objects.get(id=response_id)
-                return ingredient
-            ingredients = list(map(add_recipe, ingredients))
-            for ingredient in ingredients:
-                Ingredient.objects.create(**ingredient)
-            # Ingredient.objects.bulk_create(ingredients)
-
-            # ingredient_serializer = IngredientSerializer(data=ingredients, many=True)
-            # ingredient_serializer.is_valid(raise_exception=True)
-            # ingredient_serializer.save()
+        # if(response_id is not None):
+        #     def add_recipe(ingredient):
+        #         ingredient['recipie'] = Recipie.objects.get(id=response_id)
+        #         return ingredient
+        #     ingredients = list(map(add_recipe, ingredients))
+        #     for ingredient in ingredients:
+        #         Ingredient.objects.create(**ingredient)
 
 
         return response

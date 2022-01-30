@@ -41,3 +41,18 @@ class IngredientCategory():
         (DRY_GOOD, "Dry good"),
     ]
 
+class IngredientReplacementReason:
+    VEGITARIAN = "VEGITARIAN"
+    VEGAN = "VEGAN"
+    DAIRY = "DAIRY"
+    GLUTEN = "GLUTEN"
+    LEGUMINOUS = "LEGUMINOUS"
+
+    reasons = [
+        (VEGITARIAN, "Vegitarian"),
+        (VEGAN, "Vegan"),
+        (DAIRY, "Dairy"),
+        (GLUTEN, "Gluten"),
+        (LEGUMINOUS,"Leguminous") 
+    ]
+

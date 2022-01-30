@@ -1,5 +1,5 @@
 from django.db import models
-from .enums import IngredientUnit, IngredientCategory
+from .enums import IngredientUnit, IngredientCategory, IngredientReplacementReason
 # Create your models here.
 
 
@@ -26,11 +26,18 @@ class Ingredient(models.Model):
                                 null=True, blank=True
                                 )
 
+
     def __str__(self):
         return f"{self.name}"
+    
 
 
 class RecipieIngredient(models.Model):
     recipie = models.ForeignKey(Recipie, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
     amount = models.FloatField(null=True, blank=True)
+    replaces = models.IntegerField(null=True, blank=True)
+    replaces_reason = models.CharField(
+        choices=IngredientReplacementReason.reasons,
+        null=True, blank=True, max_length=255
+    )

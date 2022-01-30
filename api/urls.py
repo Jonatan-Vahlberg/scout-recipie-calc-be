@@ -10,5 +10,10 @@ urlpatterns = [
         r'^recipies/(?P<pk>[0-9]+)/$',
         views.RecipieDetailView.as_view(),
         name="recipie_detail_view"
+    ),
+    re_path(
+        r'^ingredients/$',
+        views.IngredientListView.as_view(),
+        name="ingredient_list_view"
     )
 ]

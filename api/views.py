@@ -39,14 +39,14 @@ class RecipieListView(StandardSearchInterface, generics.ListCreateAPIView):
                 _ing = Ingredient.objects.get(id=ingredient.get('ingredient_id'))
                 _rec = Recipie.objects.get(id=response_id)
 
-                amount, replaces, replaces_reason = itemgetter('amount','replaces','replaces_reason')(ingredient)
+                amount, replaces = itemgetter('amount','replaces')(ingredient)
                 print(amount)
                 extra = {}
                 if amount is not None:
                     extra['amount'] = amount
                 if replaces is not None:
                     extra['replaces'] = replaces
-                    extra['replaces_reason'] = replaces_reason
+                    extra['replaces_reason'] = ingredient.get('replaces_reason')
                 RecipieIngredient.objects.create(
                     recipie= _rec,
                     ingredient = _ing,

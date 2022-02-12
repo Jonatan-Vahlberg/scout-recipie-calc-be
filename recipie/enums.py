@@ -46,6 +46,7 @@ class IngredientReplacementReason:
     VEGAN = "VEGAN"
     DAIRY = "DAIRY"
     GLUTEN = "GLUTEN"
+    MP_ALLERGIES = "MP_ALLERGIES"
     LEGUMINOUS = "LEGUMINOUS"
 
     reasons = [
@@ -53,6 +54,7 @@ class IngredientReplacementReason:
         (VEGAN, "Vegan"),
         (DAIRY, "Dairy"),
         (GLUTEN, "Gluten"),
-        (LEGUMINOUS,"Leguminous") 
+        (LEGUMINOUS,"Leguminous"), 
+        (MP_ALLERGIES,"MIlk protien")
     ]
 

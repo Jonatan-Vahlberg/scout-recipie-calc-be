@@ -4,15 +4,20 @@ from recipie.serializers import RecipieSerializer, IngredientSerializer
 from recipie.models import Recipie, Ingredient, RecipieIngredient
 from operator import itemgetter
 
-class StandardPaginationSet(pagination.PageNumberPagination):
+class SmallPaginationSet(pagination.PageNumberPagination):
     page_size = 10
-    page_size_query_param = 'page'
+    page_size_query_param = 'page_size'
     max_page_size = 10
 
-class LargePaginationSet(pagination.PageNumberPagination):
+class StandardPaginationSet(pagination.PageNumberPagination):
     page_size = 20
-    page_size_query_param = 'page'
+    page_size_query_param = 'page_size'
     max_page_size = 20
+
+class LargePaginationSet(pagination.PageNumberPagination):
+    page_size = 100
+    page_size_query_param = 'page_size'
+    max_page_size = 1000
 
 class StandardSearchInterface():
     search_fields = ['name']
@@ -22,7 +27,7 @@ class StandardSearchInterface():
 class RecipieListView(StandardSearchInterface, generics.ListCreateAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieSerializer
-    pagination_class = LargePaginationSet
+    pagination_class = StandardPaginationSet
     search_fields= ['name']
 
     def create(self, request, *args, **kwargs):
@@ -31,7 +36,6 @@ class RecipieListView(StandardSearchInterface, generics.ListCreateAPIView):
         response_id = response.data.get('id')
         if(response_id is not None):
             for ingredient in ingredients:
-                print(ingredient.get('s'))
                 _ing = Ingredient.objects.get(id=ingredient.get('ingredient_id'))
                 _rec = Recipie.objects.get(id=response_id)
 

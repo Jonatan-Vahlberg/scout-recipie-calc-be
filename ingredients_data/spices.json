@@ -40,16 +40,6 @@
     "category": "SPICE"
   },
   {
-    "name": "",
-
-    "category": ""
-  },
-  {
-    "name": "",
-
-    "category": ""
-  },
-  {
     "name": "Dragon",
 
     "category": "SPICE"
@@ -110,16 +100,6 @@
     "category": "SPICE"
   },
   {
-    "name": "",
-
-    "category": ""
-  },
-  {
-    "name": "",
-
-    "category": ""
-  },
-  {
     "name": "Kakao",
     "unit": "msk",
     "category": "SPICE"
@@ -145,11 +125,6 @@
     "category": "SPICE"
   },
   {
-    "name": "",
-
-    "category": ""
-  },
-  {
     "name": "Körvel",
 
     "category": "SPICE"
@@ -165,35 +140,17 @@
     "category": "SPICE"
   },
   {
-    "name": "",
-
-    "category": ""
-  },
-  {
     "name": "Kvanne",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Lakritsrot",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+ 
   {
     "name": "Långpeppar",
     "unit": "krm",
@@ -224,11 +181,7 @@
     "unit": "msk",
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Myrten",
 
@@ -254,16 +207,7 @@
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Paprika",
 
@@ -279,41 +223,25 @@
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Persilja",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Pimpinell",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+ 
   {
     "name": "Piplök",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Renfana",
 
@@ -389,31 +317,19 @@
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+ 
   {
     "name": "Vanilj",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Vinruta",
 
     "category": "SPICE"
   },
-  {
-    "name": "",
-
-    "category": ""
-  },
+  
   {
     "name": "Vinterkyndel",
 

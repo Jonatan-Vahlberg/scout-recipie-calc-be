@@ -2,11 +2,17 @@
 from rest_framework import serializers
 from .models import Recipie, Ingredient, RecipieIngredient
 
+class IngredientListSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        items = [Ingredient(**item) for item in validated_data]
+        return Ingredient.objects.bulk_create(items, ignore_conflicts=True)
 
 class IngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ingredient
         fields = ('name', 'id', 'unit', 'category')
+        list_serializer_class = IngredientListSerializer
 
 class RecipieIngredientSerializer(serializers.ModelSerializer):
     name = serializers.ReadOnlyField(source='ingredient.name')

@@ -11,6 +11,7 @@ class IngredientUnit():
     PIECE = "st"
     TEA_SPOON = "tsk"
     TABLE_SPOON = "msk"
+    SPICE_SPOON = "krm"
 
     units = [
         (GRAMM, 'g'),
@@ -23,6 +24,7 @@ class IngredientUnit():
         (PIECE, 'st'),
         (TEA_SPOON, 'tsk'),
         (TABLE_SPOON, 'msk'),
+        (SPICE_SPOON, 'krm'),
     ]
 
 

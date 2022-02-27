@@ -1,0 +1,647 @@
+[
+    {
+      "name": "Åkerbönor",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Ängssyra",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Aubergine",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Avokado",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Basilika",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Bataviasallat",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Bifftomat",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Blomkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Bondbönor",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Broccoli",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Brysselkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Brytbönor",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Butternut",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Chili",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Citronmeliss",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Daggkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Dansk sparrispotatis",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Dill",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Dragon",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Druvgurka",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Ekbladssallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Endive",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Fänkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Färskpotatis",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Fläderblom",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Frisésallat",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Gräslök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Groddar",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Grönkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Gul lök",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Gulbeta",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Gurka",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Gurkört",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Habanero",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Haricots verts",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Haverrot",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Huvudsallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Ingefära",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Isbergssallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Jalapeño",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Jordärtskocka",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Kålrabbi",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Kålrot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Kinesisk gräslök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Komatsuna",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Koriander",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Korogi",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Körvel",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Kronärtskocka",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Krondill",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Lagerblad",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Libbsticka",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Luftlök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Majrova",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Majs",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Mandelpotatis",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Mangold",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Märgärt",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Mejram",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Mizuna",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Morot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Muskotblomma",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Muskotnöt",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Mynta",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Okra",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Oregano",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Pak choi",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Palsternacka",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Paprika",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Pärllök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Pepparrot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Persilja",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Persiljerot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Piplök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Plocksallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Polkabeta",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Portlak",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Potatis",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Potatislök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Pumpa",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Purjolök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rädisor",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Ramslök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rättika",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Röd steklök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rödbeta",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rödbetsblad",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rödkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rödlök",
+      "category": "VEGETABLE",
+      "unit": "st"
+    },
+    {
+      "name": "Romanesco",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Romansallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rosésallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rosmarin",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rotselleri",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Rucola",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Salladskål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Salladslök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Salvia",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sareptasenap",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Savojkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Schalottenlök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Selleri",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Silverlök",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Skärbönor",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Smörgåskrasse",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sockerärt",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sockerrot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sötpotatis",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Spagettipumpa",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sparris",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sparrissallat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Spenat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Spetskål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Squash",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Svarta vinbärsblad",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Svartkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Svartrot",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Svedjerova",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Sydcikoria",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Tatsoi",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Timjan",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Tomat",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vattenkrasse",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vaxbönor",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vinterpotatis",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vitbeta",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vitkål",
+      "category": "VEGETABLE",
+      "unit": "g"
+    },
+    {
+      "name": "Vitlöks klyfta",
+      "category": "VEGETABLE",
+      "unit": "st"
+    }
+  ]

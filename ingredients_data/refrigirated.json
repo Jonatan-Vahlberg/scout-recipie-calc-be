@@ -1,0 +1,247 @@
+[
+    {
+      "name": "Abborre",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Bläckfisk",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Blåmusslor",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Braxen",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Flundra",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Gädda",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Gös",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Hälleflundra",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Havskräfta",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Hummer",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Kalixlöjrom",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Kolja",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Krabbtaska",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Kungskrabba",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Lake",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Lax",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Lubb",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Makrill",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Ostron",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Pilgrimsmusslor",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Räkor",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Regnbågsöring",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Röding",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Rödspätta",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Sej",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Sik",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Siklöja",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Sill",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Sjötunga",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Skarpsill",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Slätvar",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Tioarmad bläckfisk",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Torsk",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Vild lax",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Köttfärs",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Ägg",
+      "unit": "st",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Bacon",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Kycklingbröst",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Vegofärs",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Vegobitar",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Riven ost",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Halloumi",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Mozzarella",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Frusna ärtor",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Mjölk",
+      "unit": "st",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Havremjölk",
+      "unit": "st",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Grädde",
+      "unit": "ml",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Havregrädde",
+      "unit": "ml",
+      "category": "REFRIGERATED"
+    },
+    {
+      "name": "Köttbullar",
+      "unit": "g",
+      "category": "REFRIGERATED"
+    }
+  ]

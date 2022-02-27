@@ -1,5 +1,7 @@
+from django.http import HttpResponse
 from django.shortcuts import render
-from rest_framework import generics, pagination, filters
+from rest_framework import generics, pagination, filters, status
+from rest_framework.response import Response
 from recipie.serializers import RecipieSerializer, IngredientSerializer
 from recipie.models import Recipie, Ingredient, RecipieIngredient
 from operator import itemgetter
@@ -66,5 +68,14 @@ class IngredientListView(StandardSearchInterface, generics.ListCreateAPIView):
     queryset = Ingredient.objects.all()
     serializer_class = IngredientSerializer
     pagination_class = LargePaginationSet
+
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        serializer = self.get_serializer(data=data, many=isinstance(data, list))
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            print(serializer.data)
+            return Response(serializer.data,status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     

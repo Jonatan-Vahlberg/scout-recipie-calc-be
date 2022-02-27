@@ -1,0 +1,232 @@
+[
+    {
+      "name": "Åkerbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Amerikanska blåbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Ananas",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Äpple",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Aroniabär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Bananer",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Bärhäggmispel",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Berberisbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Bigarråer",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Björnbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Blåbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Blåhallon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Bocktörne",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Dadlar",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Fläderbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Granatäpple",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Hallon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Havtorn",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Hjortron",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Jordgubbar",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Kapkrusbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Kiwi",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Körsbärsplommon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Krikon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Krusbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Krusvinbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Kvitten",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Lingon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Mango",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Nektarin",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Nypon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Päron",
+      "unit": "st",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Persikor",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Plommon",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Rabarber",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Röda vinbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Rönnbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Rosenkvitten",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Slånbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Smultron",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Surkörsbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Svart mullbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Svarta vinbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Tranbär",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Vildapel",
+      "unit": "g",
+      "category": "FRUIT"
+    },
+    {
+      "name": "Vindruvor",
+      "unit": "g",
+      "category": "FRUIT"
+    }
+  ]

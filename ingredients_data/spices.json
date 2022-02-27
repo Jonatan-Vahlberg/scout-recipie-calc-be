@@ -1,0 +1,427 @@
+[
+  {
+    "name": "Åbrodd",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Anis",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Basilika",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Bockhornsklöver",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Cayennepeppar",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Chilipeppar",
+    "unit": "krm",
+    "category": "SPICE"
+  },
+  {
+    "name": "Citrongräs",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Citronmeliss",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Dragon",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Fänkål",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Fänkål",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Galanga",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Gräslök",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Gurkmeja",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Gurkört",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Humle",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Humle",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Ingefära",
+    "unit": "msk",
+    "category": "SPICE"
+  },
+  {
+    "name": "Isop",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Johannesört",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Kakao",
+    "unit": "msk",
+    "category": "SPICE"
+  },
+  {
+    "name": "Kanel",
+    "unit": "tsk",
+    "category": "SPICE"
+  },
+  {
+    "name": "Kardemumma",
+    "unit": "tsk",
+    "category": "SPICE"
+  },
+  {
+    "name": "Kinesisk gräslök",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Koriander",
+    "unit": "msk",
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Körvel",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Kryddpeppar",
+    "unit": "tsk",
+    "category": "SPICE"
+  },
+  {
+    "name": "Kummin",
+    "unit": "tsk",
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Kvanne",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Lakritsrot",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Långpeppar",
+    "unit": "krm",
+    "category": "SPICE"
+  },
+  {
+    "name": "Lavendel",
+    "unit": "krm",
+    "category": "SPICE"
+  },
+  {
+    "name": "Libsticka",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Malört",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Muskot",
+    "unit": "krm",
+    "category": "SPICE"
+  },
+  {
+    "name": "Mynta",
+    "unit": "msk",
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Myrten",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Myskmadra",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Myskmadra",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Myskmadra",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Oregano",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Paprika",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Peppar",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Pepparrot",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Persilja",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Pimpinell",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Piplök",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Renfana",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Ringblomma",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Rosmarin",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Saffran",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Salt",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Salvia",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Sommarkyndel",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Spansk körvel",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Spiskummin",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Stjärnanis",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Svartpeppar",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Tamarind",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Temynta",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Timjan",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Timjan",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Vanilj",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Vinruta",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "",
+
+    "category": ""
+  },
+  {
+    "name": "Vinterkyndel",
+
+    "category": "SPICE"
+  },
+  {
+    "name": "Torkad vitlök",
+    "unit": "krm",
+    "category": "SPICE"
+  }
+]

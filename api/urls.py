@@ -16,4 +16,9 @@ urlpatterns = [
         views.IngredientListView.as_view(),
         name="ingredient_list_view"
     )
+    ,re_path(
+        r'^user/$',
+        views.CreateUserView.as_view(),
+        name="Create new User"
+    )
 ]

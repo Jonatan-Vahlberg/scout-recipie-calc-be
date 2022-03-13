@@ -2,9 +2,16 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from rest_framework import generics, pagination, filters, status
 from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+from core.serializers import UserSerializer
 from recipie.serializers import RecipieSerializer, IngredientSerializer
 from recipie.models import Recipie, Ingredient, RecipieIngredient
 from operator import itemgetter
+from django.contrib.auth import get_user_model
+
+
+class UnauthenticatedRequest():
+    permission_classes = [AllowAny]
 
 class SmallPaginationSet(pagination.PageNumberPagination):
     page_size = 10
@@ -26,7 +33,7 @@ class StandardSearchInterface():
     filter_backends = (filters.SearchFilter,)
 
 # Create your views here.
-class RecipieListView(StandardSearchInterface, generics.ListCreateAPIView):
+class RecipieListView(StandardSearchInterface, UnauthenticatedRequest, generics.ListCreateAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieSerializer
     pagination_class = StandardPaginationSet
@@ -60,14 +67,17 @@ class RecipieListView(StandardSearchInterface, generics.ListCreateAPIView):
         return response
 
 
-class RecipieDetailView(generics.RetrieveAPIView):
+class RecipieDetailView(UnauthenticatedRequest, generics.RetrieveAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieSerializer
 
-class IngredientListView(StandardSearchInterface, generics.ListCreateAPIView):
+
+
+class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generics.ListCreateAPIView):
     queryset = Ingredient.objects.all()
     serializer_class = IngredientSerializer
     pagination_class = LargePaginationSet
+
 
     def create(self, request, *args, **kwargs):
         data = request.data
@@ -78,4 +88,7 @@ class IngredientListView(StandardSearchInterface, generics.ListCreateAPIView):
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+class CreateUserView(UnauthenticatedRequest, generics.CreateAPIView):
+    model = get_user_model
+    serializer_class = UserSerializer
     

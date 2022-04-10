@@ -1,5 +1,7 @@
 from django.urls import re_path
+from rest_framework import authtoken
 from . import views
+
 urlpatterns = [
     re_path(
         r'^recipies/$',
@@ -17,8 +19,13 @@ urlpatterns = [
         name="ingredient_list_view"
     )
     ,re_path(
-        r'^user/$',
+        r'^user/create/$',
         views.CreateUserView.as_view(),
         name="Create new User"
+    )
+    ,re_path(
+        r'^user/login/$',
+        authtoken.views.obtain_auth_token,
+        name="Login User"
     )
 ]

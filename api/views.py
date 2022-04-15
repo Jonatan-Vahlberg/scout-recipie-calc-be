@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework import generics, pagination, filters, status
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from core.serializers import UserSerializer
+from core.serializers import UserSerializer, UserRegisterSerializer
 from recipie.serializers import RecipieSerializer, IngredientSerializer
 from recipie.models import Recipie, Ingredient, RecipieIngredient
 from operator import itemgetter
@@ -90,5 +90,5 @@ class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generi
     
 class CreateUserView(UnauthenticatedRequest, generics.CreateAPIView):
     model = get_user_model
-    serializer_class = UserSerializer
+    serializer_class = UserRegisterSerializer
     

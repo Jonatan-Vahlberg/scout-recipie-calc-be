@@ -23,9 +23,4 @@ urlpatterns = [
         views.CreateUserView.as_view(),
         name="Create new User"
     )
-    ,re_path(
-        r'^user/login/$',
-        authtoken.views.obtain_auth_token,
-        name="Login User"
-    )
 ]

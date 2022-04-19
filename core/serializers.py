@@ -1,9 +1,11 @@
 
 
+from dataclasses import fields
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model # If used custom user model
-
+from models import Cart, CartRecipie, PortionGroup
+from recipie.serializers import RecipieSerializer
 UserModel = get_user_model()
 
 
@@ -51,3 +53,25 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         )
 
         return user
+
+
+class CartRecipieSerializer(serializers.ModelSerializer):
+    recipie = serializers.ReadOnlyField(source="recipie")
+
+    class Meta:
+        model = CartRecipie
+        fields = ('recipie')
+
+class PortionGroupSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = PortionGroup
+        fields = '__all__'
+
+class CartSerializer(serializers.ModelSerializer):
+
+    recipies = CartRecipieSerializer(many=True, read_only=True)
+    portions = PortionGroupSerializer(read_only=True)
+    class Meta:
+        model = Cart
+        fields = ('id','updated_at','recipies')

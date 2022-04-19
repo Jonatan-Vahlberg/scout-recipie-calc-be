@@ -6,6 +6,7 @@ from rest_framework.permissions import AllowAny
 from core.serializers import UserSerializer, UserRegisterSerializer
 from recipie.serializers import RecipieSerializer, IngredientSerializer
 from recipie.models import Recipie, Ingredient, RecipieIngredient
+from core.models import Cart
 from operator import itemgetter
 from django.contrib.auth import get_user_model
 
@@ -70,7 +71,7 @@ class RecipieListView(StandardSearchInterface, UnauthenticatedRequest, generics.
 class RecipieDetailView(UnauthenticatedRequest, generics.RetrieveAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieSerializer
-
+    
 
 
 class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generics.ListCreateAPIView):
@@ -87,7 +88,11 @@ class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generi
             print(serializer.data)
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
+class CreateCart(generics.CreateAPIView):
+    queryset = Ingredient.objects.all()
+
+
 class CreateUserView(UnauthenticatedRequest, generics.CreateAPIView):
     model = get_user_model
     serializer_class = UserRegisterSerializer

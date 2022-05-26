@@ -26,6 +26,8 @@ class RecipieIngredientSerializer(serializers.ModelSerializer):
 
 class RecipieSerializer(serializers.ModelSerializer):
     ingredients = RecipieIngredientSerializer(source='recipieingredient_set',many=True, read_only=True)
+    id = serializers.ModelField(model_field=Recipie()._meta.get_field('id'), required=False)
+
     class Meta:
         model = Recipie
         fields = ('name', 'id', 'link', 'image_link', 'description', 'ingredients')

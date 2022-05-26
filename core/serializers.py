@@ -1,10 +1,13 @@
 
 
-from dataclasses import fields
+
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
-from django.contrib.auth import get_user_model # If used custom user model
-from models import Cart, CartRecipie, PortionGroup
+from django.contrib.auth import get_user_model
+from core.helpers import create_cart_item, remove_old_cart_items, update_cart_items
+
+from recipie.models import Recipie # If used custom user model
+from .models import Cart, CartItem, PortionGroup
 from recipie.serializers import RecipieSerializer
 UserModel = get_user_model()
 
@@ -55,23 +58,60 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         return user
 
 
-class CartRecipieSerializer(serializers.ModelSerializer):
-    recipie = serializers.ReadOnlyField(source="recipie")
-
-    class Meta:
-        model = CartRecipie
-        fields = ('recipie')
-
 class PortionGroupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PortionGroup
-        fields = '__all__'
+        fields = (
+            'xs',
+            'sm',
+            'md',
+            'lg',
+            'xl',
+
+            'VEGITARIAN',
+            'VEGAN',
+            'DAIRY',
+            'MP_ALLERGIES',
+            'GLUTEN',
+            'LEGUMINOUS',
+        )
+
+class CartItemSerializer(serializers.ModelSerializer):
+    recipie = RecipieSerializer()
+    portions = PortionGroupSerializer()
+    id = serializers.ModelField(model_field=CartItem()._meta.get_field('id'), required=False)
+
+    class Meta:
+        model = CartItem
+        fields = ('id', 'recipie', 'portions')
+
 
 class CartSerializer(serializers.ModelSerializer):
+    items = CartItemSerializer(many=True)
 
-    recipies = CartRecipieSerializer(many=True, read_only=True)
-    portions = PortionGroupSerializer(read_only=True)
     class Meta:
         model = Cart
-        fields = ('id','updated_at','recipies')
+        fields = ('id', 'updated_at', 'items','user')
+    
+    def create(self, validated_data):
+        items = validated_data.pop('items')
+        cart = Cart.objects.create(**validated_data)
+        for item in items:
+            create_cart_item(item, cart)
+    
+        return cart
+
+    def update(self, instance, validated_data):
+        items = validated_data.pop('items')
+        saved_items = instance.items.all()
+        remove_old_cart_items(items, saved_items)
+        for item in items:
+            _item = saved_items.filter(id=item.get('id'),)
+            if not _item.exists():
+                print("TESTING 2")
+                create_cart_item(item, instance)
+            else:
+                update_cart_items(_item, item, saved_items)
+        
+        return instance

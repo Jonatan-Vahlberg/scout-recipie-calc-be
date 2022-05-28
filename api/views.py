@@ -1,14 +1,11 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+
 from rest_framework import generics, pagination, filters, status
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from api.helpers import update_and_remove_cart_items
 from core.serializers import CartSerializer, UserSerializer, UserRegisterSerializer
 from recipie.serializers import RecipieSerializer, IngredientSerializer
-from recipie.models import Recipie, Ingredient, RecipieIngredient
+from recipie.models import Recipie, Ingredient
 from core.models import Cart
-from operator import itemgetter
 from django.contrib.auth import get_user_model
 
 ### ABSTRACT VIEWS ###

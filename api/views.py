@@ -44,38 +44,15 @@ class RecipieListView(StandardSearchInterface, UnauthenticatedRequest, generics.
     search_fields= ['name']
 
     def create(self, request, *args, **kwargs):
-        ingredients = request.data.get('ingredients')
-        response = super().create(request, *args, **kwargs)
-        response_id = response.data.get('id')
-        if(response_id is not None):
-            for ingredient in ingredients:
-                _ing = Ingredient.objects.get(id=ingredient.get('ingredient_id'))
-                _rec = Recipie.objects.get(id=response_id)
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()       
+            return Response(serializer.data,status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-                amount, replaces = itemgetter('amount','replaces')(ingredient)
-                print(amount)
-                extra = {}
-                if amount is not None:
-                    extra['amount'] = amount
-                if replaces is not None:
-                    extra['replaces'] = replaces
-                    extra['replaces_reason'] = ingredient.get('replaces_reason')
-                RecipieIngredient.objects.create(
-                    recipie= _rec,
-                    ingredient = _ing,
-                    **extra
-
-                )
-
-
-        return response
-
-
-class RecipieDetailView(UnauthenticatedRequest, generics.RetrieveAPIView):
+class RecipieDetailView(UnauthenticatedRequest, generics.RetrieveUpdateAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieSerializer
-    
-
 
 class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generics.ListCreateAPIView):
     queryset = Ingredient.objects.all()
@@ -88,7 +65,6 @@ class IngredientListView(StandardSearchInterface, UnauthenticatedRequest, generi
         serializer = self.get_serializer(data=data, many=isinstance(data, list))
         if serializer.is_valid(raise_exception=True):
             serializer.save()
-            print(serializer.data)
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

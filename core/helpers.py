@@ -20,7 +20,7 @@ def remove_old_cart_items(items, saved_items):
         item.delete()
 
 
-def update_cart_items(instance_item, item, saved_items,):
+def update_cart_item(instance_item, item, saved_items,):
     id = item.get('id', None)
     instance_item = saved_items.get(id=id)
     PortionGroup.objects.filter(cart_item=instance_item).update(**item.get('portions'))

@@ -5,7 +5,7 @@ from .enums import IngredientUnit, IngredientCategory, IngredientReplacementReas
 
 class Recipie(models.Model):
     ingredients = models.ManyToManyField(
-        "Ingredient", through="RecipieIngredient", through_fields=('recipie', 'ingredient'))
+        "Ingredient", through="RecipieIngredient", related_name="recipies")
     name = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
     link = models.CharField(max_length=500, null=True, blank=True)
@@ -33,7 +33,7 @@ class Ingredient(models.Model):
 
 
 class RecipieIngredient(models.Model):
-    recipie = models.ForeignKey(Recipie, on_delete=models.CASCADE)
+    recipie = models.ForeignKey(Recipie, on_delete=models.CASCADE,)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
     amount = models.FloatField(null=True, blank=True)
     replaces = models.IntegerField(null=True, blank=True)

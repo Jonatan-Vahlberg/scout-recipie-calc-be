@@ -4,7 +4,7 @@
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import get_user_model
-from core.helpers import create_cart_item, remove_old_cart_items, update_cart_items
+from core.helpers import create_cart_item, remove_old_cart_items, update_cart_item
 
 from recipie.models import Recipie # If used custom user model
 from .models import Cart, CartItem, PortionGroup
@@ -109,9 +109,8 @@ class CartSerializer(serializers.ModelSerializer):
         for item in items:
             _item = saved_items.filter(id=item.get('id'),)
             if not _item.exists():
-                print("TESTING 2")
                 create_cart_item(item, instance)
             else:
-                update_cart_items(_item, item, saved_items)
+                update_cart_item(_item, item, saved_items)
         
         return instance

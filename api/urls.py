@@ -30,13 +30,19 @@ urlpatterns = [
     ),
 
     re_path(
-        r'^user/cart/$',
+        r'^cart/$',
         views.CreateCartView.as_view(),
         name="Create cart view",
     ),
     re_path(
+        r'^user/cart/$',
+        views.RetriveUserCartView.as_view(),
+        name="User Cart retrive view",
+    ),
+
+    re_path(
         r'^user/cart/(?P<pk>[0-9]+)/$',
-        views.RetriveUpdateUserCartView.as_view(),
-        name="Cart retrive update view",
+        views.UpdateUserCartView.as_view(),
+        name="Cart update view",
     )
 ]

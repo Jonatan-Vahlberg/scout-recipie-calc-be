@@ -99,9 +99,21 @@ class CreateCartView(generics.CreateAPIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class RetriveUpdateUserCartView(generics.RetrieveUpdateAPIView):
+class RetriveUserCartView(generics.RetrieveAPIView):
     model = Cart
     serializer_class = CartSerializer
+    def get_queryset(self):
+        return Cart.objects.filter(user=self.request.user)
+    
+    def get(self, request, *args, **kwargs):
+        instance = self.get_queryset().first()
+        serializer = self.get_serializer(instance)
+        if instance is not None:
+            return Response(serializer.data)
+        return Response({}, status=status.HTTP_404_NOT_FOUND)
 
+class UpdateUserCartView(generics.UpdateAPIView):
+    model = Cart
+    serializer_class = CartSerializer
     def get_queryset(self):
         return Cart.objects.filter(user=self.request.user)

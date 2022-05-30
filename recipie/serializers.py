@@ -58,6 +58,6 @@ class RecipieSerializer(serializers.ModelSerializer):
                 create_recipie_ingredient(ingredient, instance)
             else:
                 update_recipie_ingredient(ingredient, instance)
-        
+        instance = super().update(instance, validated_data)
         return instance
 

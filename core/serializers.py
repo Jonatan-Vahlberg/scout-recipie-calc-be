@@ -112,5 +112,6 @@ class CartSerializer(serializers.ModelSerializer):
                 create_cart_item(item, instance)
             else:
                 update_cart_item(_item, item, saved_items)
-        
+                
+        instance = super().update(instance, validated_data)
         return instance
